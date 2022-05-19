@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = 'mydatabase_admin';
 $pass = 'Password123#@!';
-$db_name = 'test';
+$db_name = 'know_base';
 
 $conn = new MySQLi($host, $user, $pass, $db_name);
 
