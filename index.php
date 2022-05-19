@@ -1,7 +1,6 @@
 <?php 
-include("path.php");
-include(ROOT_PATH . "/app/controllers/users.php");
-usersOnly();
+//include("path.php");
+//include(ROOT_PATH . "/app/controllers/users.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,9 +23,7 @@ usersOnly();
   <title>MorganFinances</title>
 </head>
 <body>
-
-<?php include(ROOT_PATH . "/app/includes/header.php") ?>
-<?php include(ROOT_PATH . "/app/includes/messages.php"); ?>
+test
 
 
 
