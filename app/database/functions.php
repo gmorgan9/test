@@ -3,7 +3,7 @@ session_start();
 require('connect.php');
 
 // connect to database update
-$db = mysqli_connect('localhost', 'mydatabase_admin', 'Password123#@!', 'know_base');
+$db = mysqli_connect('localhost', 'gmorg', 'gmorgpass', 'doc');
 
 // variable declaration
 $username = "";
