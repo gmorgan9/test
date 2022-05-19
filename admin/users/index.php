@@ -1,6 +1,6 @@
 <?php include("../../path.php"); ?>
-<?php include('functions.php'); 
-session_start();
+<?php include(ROOT_PATH . "/app/controllers/users.php"); 
+adminOnly();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,9 +9,6 @@ session_start();
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="/assets/images/fav.png">
 
         <!-- Font Awesome -->
         <link rel="stylesheet"
@@ -28,6 +25,9 @@ session_start();
 
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../../assets/css/admin.css?v=<?php echo time(); ?>">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/assets/images/fav.png?v=<?php echo time(); ?>">
 
         <title>Admin Section - Manage Users</title>
     </head>

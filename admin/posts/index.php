@@ -12,7 +12,7 @@ session_start();
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="/assets/images/fav.png">
+        <link rel="icon" type="image/x-icon" href="/assets/images/fav.png?v=<?php echo time(); ?>">
 
         <!-- Font Awesome -->
         <link rel="stylesheet"
@@ -56,7 +56,6 @@ session_start();
                     <h2 class="page-title">Manage Posts</h2>
 
                     <?php include(ROOT_PATH . "/app/includes/messages.php"); ?>
-
                     <table>
                         <thead>
                             <th>SN</th>
@@ -65,11 +64,12 @@ session_start();
                             <th colspan="3">Action</th>
                         </thead>
                         <tbody>
+                            
                             <?php foreach ($posts as $key => $post): ?>
                                 <tr>
                                     <td><?php echo $key + 1; ?></td>
                                     <td><?php echo $post['title'] ?></td>
-                                    <td>Garrett</td>
+                                    <td><?php echo $post['username'] ?></td>
                                     <td><a href="edit.php?id=<?php echo $post['id']; ?>" class="edit">edit</a></td>
                                     <td><a href="edit.php?delete_id=<?php echo $post['id']; ?>" class="delete">delete</a></td>
 
@@ -92,8 +92,6 @@ session_start();
 
         </div>
         <!-- // Page Wrapper -->
-
-
 
         <!-- JQuery -->
         <script

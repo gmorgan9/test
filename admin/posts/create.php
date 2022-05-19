@@ -21,6 +21,9 @@ adminOnly();
         <link href="https://fonts.googleapis.com/css?family=Candal|Lora"
             rel="stylesheet">
 
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/assets/images/fav.png?v=<?php echo time(); ?>">
+
         <!-- Custom Styling -->
         <link rel="stylesheet" href="../../assets/css/style.css?v=<?php echo time(); ?>">
 
@@ -64,10 +67,6 @@ adminOnly();
                             <label>Body</label>
                             <textarea name="body" id="body"><?php echo $body ?></textarea>
                         </div>
-                        <!-- <div>
-                            <label>Image</label>
-                            <input type="file" name="image" class="text-input">
-                        </div> -->
                         <div>
                             <label>Topic</label>
                             <select name="topic_id" class="text-input">

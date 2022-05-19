@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #002E5D;
-    --secondary-color: #0087a8;
-    --hover-color: #002f5da6;
-    --backgroud: #F8F8FF;
-    --light-text: #fff;
-    --red-background: #f2dede;
+  --primary-color: #362417;
+  --secondary-color: #92817A;
+  --hover-color: #d6bb9b;
+  --backgroud: #F8F8FF;
+  --light-text: #fff;
+  --red-background: #f2dede;
 	--red-text: #a94442;
 	--green-text: #3c763d;
 	--green-background: #dff0d8;
@@ -174,9 +174,9 @@
   header ul li ul li a.logout {
     color: red;
   }
-  
+  /* header dropdown */
   header ul li ul li a:hover {
-    background: #d5d6d6;
+    background: lightgray;
   }
   
   header ul li a {
@@ -185,7 +185,7 @@
     font-size: 1.1em;
     text-decoration: none;
   }
-  
+  /* header buttons */
   header ul li a:hover {
     background: var(--secondary-color);
     transition: 0.5s;
@@ -200,7 +200,7 @@
   }
   
   .page-wrapper a:hover {
-    color: #006669;
+    color: var(--hover-color);
   }
 
 /* FORM */
@@ -354,7 +354,7 @@ hr {
   .content .main-content .post {
     width: 95%;
     height: 270px;
-    margin: 20px auto;
+    margin: 20px 20px;
     border-radius: 5px;
     background: white;
     position: relative;
@@ -378,6 +378,10 @@ hr {
     font-size: 0.8em;
   }
   
+  .post-preview {
+    margin-bottom: 5%;
+  }
+
   .content .main-content .post .preview-text {
     line-height: 1.5em;
     font-size: 1.03em;
@@ -388,19 +392,23 @@ hr {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    border: 1px solid #006669;
+    border: 1px solid var(--primary-color);
     background: transparent;
     border-radius: 0px;
-    color: #006669 !important;
+    color: var(--primary-color) !important;
   }
-  
   .content .main-content .post .read-more:hover {
-    background: #006669;
+    background: var(--hover-color);
     color: white !important;
     transition: 0.25s;
   }
+
+  .read-more {
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
   
-  .content .main-content .post .post-image {
+  .content .main-content .post {
     width: 40%;
     height: 100%;
     float: left;
@@ -408,9 +416,9 @@ hr {
     border-bottom-left-radius: 5px;
   }
   
-  .content .main-content .post .post-preview {
-    width: 60%;
-    padding: 10px;
+  .content .main-content .post  {
+    width: 90%;
+    padding: 15px;
     float: right;
   }
   
@@ -419,7 +427,7 @@ hr {
   }
   
   .content .sidebar {
-    width: 30%;
+    width: 25%;
     float: left;
   }
   
@@ -611,6 +619,9 @@ hr {
 .main-content {
   margin-left: 3em;
 }
+.main-content h1 {
+  color: #5c5b5b;
+}
 .search-bar-text {
   border-radius: 0px 10px 10px 0px;
   padding: 6px;
@@ -736,7 +747,7 @@ hr {
     }
   
     header ul li ul li a:hover {
-      background: #006669;
+      background: var(--hover-color);
     }
   
     header ul li ul li a.logout {
