@@ -1,19 +1,19 @@
 <?php 
 include("path.php");
-include(ROOT_PATH . "/app/controllers/topics.php");
+// include(ROOT_PATH . "/app/controllers/topics.php");
 
-$posts = array();
-$postsTitle = 'Recent Posts';
+// $posts = array();
+// $postsTitle = 'Recent Posts';
 
-if (isset($_GET['t_id'])) {
-  $posts = getPostsByTopicId($_GET['t_id']);
-  $postsTitle = "You searched for posts under '" . $_GET['name'] . "'";
-} else if (isset($_POST['search-term'])) {
-  $postsTitle = "You searched for '" . $_POST['search-term'] . "'";
-  $posts = searchPosts($_POST['search-term']);
-} else {
-  $posts = getPublishedPosts();
-}
+// if (isset($_GET['t_id'])) {
+//   $posts = getPostsByTopicId($_GET['t_id']);
+//   $postsTitle = "You searched for posts under '" . $_GET['name'] . "'";
+// } else if (isset($_POST['search-term'])) {
+//   $postsTitle = "You searched for '" . $_POST['search-term'] . "'";
+//   $posts = searchPosts($_POST['search-term']);
+// } else {
+//   $posts = getPublishedPosts();
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
