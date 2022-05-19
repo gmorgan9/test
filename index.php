@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <div class="header">
+    <div class="nav-header">
         <h1>Test site</h1>
     </div>
     <ul>
