@@ -1,9 +1,9 @@
 <?php
 
 $host = 'localhost';
-$user = 'gmorg';
-$pass = 'gmorgpass';
-$db_name = 'doc';
+$user = 'mydatabase_admin';
+$pass = 'Password123#@!';
+$db_name = 'know_base';
 
 $conn = new MySQLi($host, $user, $pass, $db_name);
 
