@@ -2,7 +2,7 @@
 session_start();
 
 // connect to database update
-$db = mysqli_connect('localhost', 'gmorg', 'gmorgpass', 'finance');
+$db = mysqli_connect('localhost', 'mydatabase_admin', 'Password123#@!', 'test');
 
 // variable declaration
 $username = "";
